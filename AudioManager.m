@@ -97,10 +97,9 @@ static AudioManager *audioManager = nil;
 {
     // --- Audio Session Setup ---
     // ---------------------------
-    UInt32 sessionCategory = kAudioSessionCategory_PlayAndRecord;
-    CheckError( AudioSessionSetProperty (kAudioSessionProperty_AudioCategory,
-                                         sizeof (sessionCategory),
-                                         &sessionCategory), "Couldn't set audio category");
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker error:nil];
+    
+
     
     Float32 preferredBufferSize = 0.0232;
     CheckError( AudioSessionSetProperty(kAudioSessionProperty_PreferredHardwareIOBufferDuration, sizeof(preferredBufferSize), &preferredBufferSize), "Couldn't set the preferred buffer duration");

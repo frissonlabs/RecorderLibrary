@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6388438C1A91E9DD00EF992D /* libRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 638843801A91E9DD00EF992D /* libRecorder.a */; };
-		6388439C1A91EA0000EF992D /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6388439B1A91EA0000EF992D /* Recorder.m */; };
+		6388439C1A91EA0000EF992D /* IOSRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6388439B1A91EA0000EF992D /* IOSRecorder.m */; };
 		638843B81A95BE2D00EF992D /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 638843B71A95BE2D00EF992D /* AudioManager.m */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +38,8 @@
 		638843801A91E9DD00EF992D /* libRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRecorder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6388438B1A91E9DD00EF992D /* RecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		638843911A91E9DD00EF992D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6388439A1A91EA0000EF992D /* Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recorder.h; sourceTree = SOURCE_ROOT; };
-		6388439B1A91EA0000EF992D /* Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recorder.m; sourceTree = SOURCE_ROOT; };
+		6388439A1A91EA0000EF992D /* IOSRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSRecorder.h; sourceTree = SOURCE_ROOT; };
+		6388439B1A91EA0000EF992D /* IOSRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSRecorder.m; sourceTree = SOURCE_ROOT; };
 		638843B61A95BE2D00EF992D /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = SOURCE_ROOT; };
 		638843B71A95BE2D00EF992D /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -86,8 +86,8 @@
 			children = (
 				638843B61A95BE2D00EF992D /* AudioManager.h */,
 				638843B71A95BE2D00EF992D /* AudioManager.m */,
-				6388439A1A91EA0000EF992D /* Recorder.h */,
-				6388439B1A91EA0000EF992D /* Recorder.m */,
+				6388439A1A91EA0000EF992D /* IOSRecorder.h */,
+				6388439B1A91EA0000EF992D /* IOSRecorder.m */,
 			);
 			path = Recorder;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				638843B81A95BE2D00EF992D /* AudioManager.m in Sources */,
-				6388439C1A91EA0000EF992D /* Recorder.m in Sources */,
+				6388439C1A91EA0000EF992D /* IOSRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

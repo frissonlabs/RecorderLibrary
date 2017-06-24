@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Recorder : NSObject
+@interface IOSRecorder : NSObject
 
-+ (Recorder *) recorder;
++ (IOSRecorder *) recorder;
 
 -(id) init;
 -(void) startRecording;

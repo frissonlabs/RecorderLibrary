@@ -6,25 +6,25 @@
 //  Copyright (c) 2015 Euphonia Labs. All rights reserved.
 //
 
-#import "Recorder.h"
+#import "IOSRecorder.h"
 #import "AudioManager.h"
 
-static Recorder *recorder = nil;
+static IOSRecorder *recorder = nil;
 
-@interface Recorder (){
+@interface IOSRecorder (){
     AudioManager *audioManager;
 }
 
 @end
-@implementation Recorder
+@implementation IOSRecorder
 
 #pragma mark - Singleton Methods
-+ (Recorder *) recorder
++ (IOSRecorder *) recorder
 {
     @synchronized(self)
     {
         if (recorder == nil) {
-            recorder = [[Recorder alloc] init];
+            recorder = [[IOSRecorder alloc] init];
         }
     }
     return recorder;
